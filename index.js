@@ -85,7 +85,7 @@ gsap.from(".fc_title", {
     x: -60,
     duration: 1,
     scrollTrigger: {
-        trigger: ".fc_header",
+        trigger: ".fonction",
         scroller: "body",
         // markers: true,
         start: "top 70%",
@@ -111,11 +111,12 @@ gsap.from(".fc_card", {
     y: -60,
     stagger: 0.4,
     scrollTrigger: {
-        trigger: ".fc_card",
+        trigger: ".fc_grid",
         scroller: "body",
         // markers: true,
         start: "top 70%",
         toggleActions: "play none none reverse",
+        // pin: true,
     },
 });
 gsap.utils.toArray(".pk_card").forEach((card, index) => {
@@ -126,10 +127,11 @@ gsap.utils.toArray(".pk_card").forEach((card, index) => {
         scrollTrigger: {
             trigger: card,
             scroller: "body", // Si tu utilises un scroll container personnalisé, mets ici l'élément.
-            // markers: true,
-            start: "top 70%", // La carte commence à être animée quand elle atteint 80% de la hauteur de la fenêtre.
-            end: "bottom top", // Quand le bas de la carte atteint le haut de la fenêtre.
+            markers: true,
+            start: "top 80%", // La carte commence à être animée quand elle atteint 80% de la hauteur de la fenêtre.
+            end: "bottom 90%", // Quand le bas de la carte atteint le haut de la fenêtre.
             toggleActions: "play none none reverse",
+            scrub: 2,
         },
     });
 });
@@ -146,3 +148,17 @@ gsap.from(".cta", {
         toggleActions: "play none none reverse",
     },
 });
+
+gsap.from(".contact", {
+    height: 0,
+    opacity: 0,
+    // duration: 2,
+    scrollTrigger: {
+        trigger: ".contact",
+        scroller: "body",
+        // markers: true,
+        start: "top 75%",
+        toggleActions: "play none none reverse",
+    },
+});
+
