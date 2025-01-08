@@ -40,7 +40,7 @@
         scrollTrigger: {
             trigger: '.ps_img',
             scroller: 'body',
-            markers: true,
+            // markers: true,
             start: 'top 70%',
             toggleActions: "play none none reverse"
         }
@@ -53,7 +53,7 @@
         scrollTrigger: {
             trigger: '.ps_header',
             scroller: 'body',
-            markers: true,
+            // markers: true,
             start: 'top 70%',
             toggleActions: "play none none reverse"
         }
@@ -66,7 +66,7 @@
         scrollTrigger: {
             trigger: '.fc_header',
             scroller: 'body',
-            markers: true,
+            // markers: true,
             start: 'top 70%',
             toggleActions: "play none none reverse"
         }
@@ -79,7 +79,7 @@
         scrollTrigger: {
             trigger: '.fc_header',
             scroller: 'body',
-            markers: true,
+            // markers: true,
             start: 'top 70%',
             toggleActions: "play none none reverse"
         }
@@ -92,7 +92,7 @@
         scrollTrigger: {
             trigger: '.fc_header',
             scroller: 'body',
-            markers: true,
+            // markers: true,
             start: 'top 70%',
             toggleActions: "play none none reverse"
         }
@@ -105,7 +105,7 @@
         scrollTrigger: {
             trigger: '.fc_card',
             scroller: 'body',
-            markers: true,
+            // markers: true,
             start: 'top 70%',
             toggleActions: "play none none reverse"
         }
@@ -118,7 +118,7 @@
             scrollTrigger: {
                 trigger: card,
                 scroller: 'body', // Si tu utilises un scroll container personnalisé, mets ici l'élément.
-                markers: true,
+                // markers: true,
                 start: 'top 70%',  // La carte commence à être animée quand elle atteint 80% de la hauteur de la fenêtre.
                 end: 'bottom top', // Quand le bas de la carte atteint le haut de la fenêtre.
                 toggleActions: "play none none reverse"
@@ -133,7 +133,7 @@
         scrollTrigger: {
             trigger: '.cta',
             scroller: 'body',
-            markers: true,
+            // markers: true,
             start: 'top 75%',
             toggleActions: "play none none reverse"
         }
