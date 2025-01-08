@@ -49,6 +49,12 @@ nav ul li a {
     color: #333;
     font-weight: 500;
 }
+nav button {
+    border: none;
+    padding: var(--p-btn);
+    margin-top: 1rem;
+    background: var(--secondary);
+}
 
 /* ✅ Menu Burger */
 .burger {
