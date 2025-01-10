@@ -7,7 +7,7 @@ burger.addEventListener("click", () => {
 
 // ANIMATION
 const tl = gsap.timeline({
-    defaults: { duration: 0.5, ease: "power3.out" },
+    defaults: { duration: 0.5, ease: "power2.out" },
 });
 
 // let split = new SplitText(".hero_title", { type: "chars" });
@@ -27,14 +27,14 @@ tl.from("nav #p", {
     })
     .from('.hero_title div', {
         y: 250,
-        duration: 0.7,
+        duration: 1,
     })
     .from('.hero_desc p', {
-        y: 100,
+        y: 50,
         duration: 0.8,
     })
     .from('.hero_cta p', {
-        y: 200,
+        y: 50,
         duration: 0.8,
     })
     .from(".hero_img", {
