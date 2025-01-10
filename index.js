@@ -7,7 +7,7 @@ burger.addEventListener("click", () => {
 
 // ANIMATION
 const tl = gsap.timeline({
-    defaults: { duration: 0.5, ease: "power2.out" },
+    defaults: { duration: 0.5, ease: "power3.out" },
 });
 
 // let split = new SplitText(".hero_title", { type: "chars" });
@@ -25,16 +25,18 @@ tl.from("nav #p", {
         opacity: 0,
         y: -30,
     })
-    .from(".hero_header", {
-        x: -30,
-        opacity: 0,
+    .from('.hero_title div', {
+        y: 250,
+        duration: 0.7,
     })
-    // .from(split.chars, {
-    //     duration: 1,
-    //     y: 100,
-    //     autoAlpha: 0,
-    //     stagger: 0.05
-    // })
+    .from('.hero_desc p', {
+        y: 100,
+        duration: 0.8,
+    })
+    .from('.hero_cta p', {
+        y: 200,
+        duration: 0.8,
+    })
     .from(".hero_img", {
         height: 0,
         duration: 1.2,
@@ -127,7 +129,7 @@ gsap.utils.toArray(".pk_card").forEach((card, index) => {
         scrollTrigger: {
             trigger: card,
             scroller: "body", // Si tu utilises un scroll container personnalisé, mets ici l'élément.
-            markers: true,
+            // markers: true,
             start: "top 80%", // La carte commence à être animée quand elle atteint 80% de la hauteur de la fenêtre.
             end: "bottom 90%", // Quand le bas de la carte atteint le haut de la fenêtre.
             toggleActions: "play none none reverse",
